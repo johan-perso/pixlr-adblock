@@ -20,7 +20,7 @@ L'extension devrait être installée et opérationnelle !
 
 ### Pour Firefox
 
-Pas encore dispo 👀
+[Télécharger pour Firefox](https://addons.mozilla.org/fr/firefox/addon/pixlradblock/)
 
 
 ## Licence
