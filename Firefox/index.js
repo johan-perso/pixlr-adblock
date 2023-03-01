@@ -12,6 +12,21 @@ var observer = new MutationObserver(mutations => {
 				node.parentElement.remove() || node.remove();
 			}
 
+			// Si c'est le canvas de prévisualisation (quand on CTRL+S)
+			if(node.nodeName == 'CANVAS'){
+				var canvas = document.querySelector("#save-preview > canvas")
+				if(canvas !== node) return; // si ce n'est pas le bon canvas, on arrête
+				var base64Img = canvas.toDataURL(1.0)
+				if(!base64Img) return; // si on a pas pu exporter l'image, on arrête
+				var img = document.createElement('img')
+				img.src = base64Img
+				img.width = canvas.width
+				img.height = canvas.height
+				img.style="max-width: 100%; max-height: 350px; margin: 0 auto; display: block; border: 1px solid #333; background-size: 20px 20px; background-position: 50% 50%; background-image: var(--square-bg);"
+				document.querySelectorAll("#save-preview > img").forEach(img => img.remove())
+				canvas.outerHTML = img.outerHTML
+			}
+
 			// Si l'élement a l'identifiant right-space
 			if(node.id == 'right-space'){
 				// Obtenir le workspace
