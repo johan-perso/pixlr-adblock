@@ -1,7 +1,7 @@
 {
 	"name": "PixlrAdblock",
 	"description": "Bloque les pubs sur Pixlr E/X.",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"manifest_version": 3,
 	"content_scripts": [{
 		"matches": ["*://pixlr.com/fr/e/*","*://pixlr.com/fr/x/*"],
