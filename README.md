@@ -2,7 +2,9 @@
 
 > "Pixlr Adblock" est une extension pour bloquer les publicités sur [Pixlr](https://pixlr.com/fr/e)
 
-Cette extension est faite pour bloquer les publicités qui s'affiche sous forme de bandeau/overlay. Pour un blocage plus complet, installer une extension telle que [uBlock Origin](https://ublockorigin.com).
+Cette extension est faite pour bloquer les publicités qui s'affichent sous forme de bandeau/overlay. Pour un blocage plus complet, installer une extension telle que [uBlock Origin](https://ublockorigin.com).
+
+Note : dans le menu "Sauvegarder" (lors d'un CTRL+S dans l'éditeur), l'image affichée dans la prévisualisation peut être déformé, vous pourrez cependant faire un clic droit dessus pour la copier dans le presse-papiers ou l'enregistrer (permet de passer outre le nombre de téléchargements gratuit par jour).
 
 ## Installation
 
@@ -25,4 +27,4 @@ L'extension devrait être installée et opérationnelle !
 
 ## Licence
 
-MIT © [Johan](https://johanstickman.com)
+MIT © [Johan](https://johanstick.me)
