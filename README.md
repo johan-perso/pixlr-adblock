@@ -27,4 +27,4 @@ L'extension devrait être installée et opérationnelle !
 
 ## Licence
 
-MIT © [Johan](https://johanstick.me)
+MIT © [Johan](https://johanstick.fr)
