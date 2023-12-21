@@ -6,7 +6,6 @@ var observer = new MutationObserver(mutations => {
 	mutations.forEach(mutation => {
 		var addedNodes = mutation.addedNodes;
 		addedNodes.forEach(node => {
-			console.log(node)
 			// Si l'élement a l'identifiant "pop" et a un enfant avec l'identifiant "pop-ad", le supprimer
 			if(node.id == 'pop' && Array.from(node.childNodes).find(n => n.id == 'pop-ad')){
 				console.log("[PixlrAdblock] 'pop-ad' bloqué");
