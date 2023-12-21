@@ -1,5 +1,5 @@
 // Dire que le fichier est chargé
-console.log("[PixlrAdblock] Extension chargée");
+console.log("[PixlrAdblock] Extension chargée : index.js");
 
 // Détecter les nouveaux élements sur la page
 var observer = new MutationObserver(mutations => {
@@ -9,6 +9,12 @@ var observer = new MutationObserver(mutations => {
 			// Si l'élement a l'identifiant "pop" et a un enfant avec l'identifiant "pop-ad", le supprimer
 			if(node.id == 'pop' && Array.from(node.childNodes).find(n => n.id == 'pop-ad')){
 				console.log("[PixlrAdblock] 'pop-ad' bloqué");
+				node.parentElement.remove() || node.remove();
+			}
+
+			// Si c'est une popup d'annonce (classes: announce news-dialog ani)
+			if(node.classList && node.classList.contains('announce') && node.classList.contains('news-dialog') && node.classList.contains('ani')){
+				console.log("[PixlrAdblock] 'announce news-dialog ani' bloqué");
 				node.parentElement.remove() || node.remove();
 			}
 
