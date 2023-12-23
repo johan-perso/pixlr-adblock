@@ -10,14 +10,17 @@ Note : dans le menu "Sauvegarder" (lors d'un CTRL+S dans l'éditeur), l'image af
 
 ### Pour Chrome
 
-L'extension ne fait pas partie du Chrome Web Store (bof envie de payer) donc...
+Installer l'extension directement [via le Chrome Web Store](https://chromewebstore.google.com/detail/pixlradblock/nfgadmodioeehbcpiaehgfmigmfmclln)
+
+ou alors :
+
 * Aller sur chrome://extensions et activer le mode développeur
-* Télécharger l'archive chrome.zip de la dernière version de l'[extension](https://github.com/johan-perso/pixlr-adblock/releases) sur votre ordinateur et décompressez-la.
+* Télécharger l'archive `chrome_*.zip` de la dernière version de l'[extension](https://github.com/johan-perso/pixlr-adblock/releases) sur votre ordinateur et décompressez-la.
 * Appuyer sur le bouton "Charger l'extension non empaquetée" via la page d'extensions et sélectionner le dossier précédemment créé.
 
 L'extension devrait être installée et opérationnelle !
 
-*Notez tout de même que si un des fichiers est supprimé, l'extension ne fonctionnera plus.*
+*Via cette méthode, l'extension sera désactivée dès la suppressions d'un des fichiers.*
 
 
 ### Pour Firefox
